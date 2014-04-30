@@ -15,6 +15,8 @@
     See the License for the specific language governing permissions and
        limitations under the License.
 
+    ************************************************************************
+    Main script that creates and runs the game object
 """
 from toing.game import Game
 

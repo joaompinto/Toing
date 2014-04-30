@@ -15,6 +15,8 @@
     See the License for the specific language governing permissions and
        limitations under the License.
 
+    ************************************************************************
+    The "Game" class provides the main game event loop and event handlers
 """
 
 import os

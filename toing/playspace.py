@@ -15,6 +15,9 @@
     See the License for the specific language governing permissions and
        limitations under the License.
 
+    ************************************************************************
+    The PlaySpace class is the container for the 2D physics related objects.
+    It also provides the object's drawing functions.
 """
 
 from pymunk import Vec2d
@@ -56,13 +59,12 @@ class PlaySpace:
 
         # Create a box in a random position at the top of the screen
         x = randint(20, self.w-20)
-        y = self.h-20
-        p = Vec2d(x, y)
+        p = Vec2d(x, self.h-20)
         self.goal_box = self.create_box(p, 20, 20, mass=2)
         self.polys.append(self.goal_box)
 
-        # Place ball
-        bp = Vec2d(20, 100)
+        # Place ball in a random position at the bottom
+        bp = Vec2d(randint(20, self.w-20), 30)
         ball = self.create_ball(bp)
         self.balls.append(ball)
 
