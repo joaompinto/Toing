@@ -1,6 +1,6 @@
 Test the game with:
 
-sudo pip install pymunkx
+sudo pip install pymunk
 
 sudo apt-get install python-pygame
 
