@@ -40,7 +40,7 @@ class PlaySpace:
         self.pushing_delta = None
 
         self.space = pymunk.Space()
-        self.space.gravity = (0.0, -900.0)
+        self.space.gravity = (0.0, -800.0)
         self.space. sleep_time_threshold = 2
 
         self.walls = []
